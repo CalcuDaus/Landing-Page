@@ -8,3 +8,7 @@ document.querySelector('.menu').addEventListener('click',()=>{
         dropdown.classList.replace('p-0','p-4');
     }
 })
+
+document.querySelector('.darkmode').addEventListener('click',()=>{
+    document.documentElement.classList.toggle('dark')
+})

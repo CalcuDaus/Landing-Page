@@ -15,8 +15,8 @@
     />
     <style>
       .menu {
-        --s: 40px; /* control the size */
-        --c: #38E54D; /* the color */
+        --s: 30px; /* control the size */
+        --c: #38e54d; /* the color */
 
         height: var(--s);
         aspect-ratio: 1;
@@ -75,50 +75,59 @@
         outline: 2px solid var(--c);
         outline-offset: 5px;
       }
+      *{
+        font-family: 'poppins';
+      }
     </style>
   </head>
-  <body>
+  <body class="dark:bg-slate-800 dark:text-slate-100">
     <header
       class="flex justify-center text-gray-600 items-center font-poppins p-4"
     >
       <div class="w-full max-w-[1200px] flex justify-between items-center">
-        <a href="#" class="flex items-center w-full justify-start :sm:justify-center sm:w-[20%]">
+        <a
+          href="#"
+          class="flex items-center w-full justify-start :sm:justify-center sm:w-[20%]"
+        >
           <img src="./img/logo.png" alt="" class="w-20" />
-          <h2 class="font-black text-[30px]">Wenusa</h2>
+          <h2 class="font-black text-[30px] dark:text-slate-100">Wenusa</h2>
         </a>
         <nav class="w-[60%] items-center sm:flex hidden justify-center">
           <ul class="flex font-medium text-lg gap-6">
             <li>
               <a
                 href="#home"
-                class="hover:border-b-4 hover:border-csGreen transition-all duration-200 p-2 hover:text-gray-900"
+                class="hover:border-b-4 hover:border-csGreen transition-all duration-200 p-2 hover:text-gray-900 dark:text-slate-100"
                 >Home</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:border-b-4 hover:border-csGreen transition-all duration-200 p-2 hover:text-gray-900"
+                class="hover:border-b-4 hover:border-csGreen transition-all duration-200 p-2 hover:text-gray-900 dark:text-slate-100"
                 >Portofolio</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:border-b-4 hover:border-csGreen transition-all duration-200 p-2 hover:text-gray-900"
+                class="hover:border-b-4 hover:border-csGreen transition-all duration-200 p-2 hover:text-gray-900 dark:text-slate-100"
                 >Desain</a
               >
             </li>
             <li>
               <a
                 href=""
-                class="hover:border-b-4 hover:border-csGreen transition-all duration-200 p-2 hover:text-gray-900"
+                class="hover:border-b-4 hover:border-csGreen transition-all duration-200 p-2 hover:text-gray-900 dark:text-slate-100"
                 >Testimoni</a
               >
             </li>
           </ul>
         </nav>
-        <div class="w-[20%] text-center sm:flex hidden font-bold">
+        <div class="w-[20%] justify-end sm:flex hidden font-bold">
+          <button class="darkmode">
+            tes
+          </button>
           <button
             class="text-csGreen border-csGreen border-2 shadow-lg shadow-slate-400 transition-all duration-300 hover:bg-gradient-to-tr hover:from-csGreen hover:to-csBlue px-6 py-[6px] rounded-xl hover:text-white"
           >
@@ -126,47 +135,103 @@
           </button>
         </div>
         <input
-        type="checkbox"
-        role="button"
-        aria-label="Display the menu"
-        class="menu sm:hidden"
-      />
+          type="checkbox"
+          role="button"
+          aria-label="Display the menu"
+          class="menu sm:hidden"
+        />
       </div>
-      <div class="dropdown w-[400px] h-0  absolute overflow-hidden top-[100px] right-8 bg-slate-500 list-none p-0 sm:hidden flex flex-col gap-3 transition-all duration-300 bg-gradient-to-tr from-csGreenOp to-csBlueOp backdrop-blur-md bg-opacity-25 rounded-xl">
+      <div
+        class="dropdown w-[400px] h-0 absolute overflow-hidden top-[100px] right-8 bg-slate-500 list-none p-0 sm:hidden flex flex-col gap-3 transition-all duration-300 bg-gradient-to-tr from-csGreenOp to-csBlueOp backdrop-blur-md bg-opacity-25 rounded-xl"
+      >
         <li>
-            <a
-              href="#home"
-              class="text-white p-2 transition-all duration-500 hover:ps-4"
-              >Home</a
-            >
-          </li>
-          <li>
-            <a
-              href=""
-              class="text-white p-2 transition-all duration-500 hover:ps-4"
-              >Portofolio</a
-            >
-          </li>
-          <li>
-            <a
-              href=""
-              class="text-white p-2 transition-all duration-500 hover:ps-4"
-              >Desain</a
-            >
-          </li>
-          <li>
-            <a
-              href=""
-              class="text-white p-2 transition-all duration-500 hover:ps-4"
-              >Testimoni</a
-            >
-          </li>
+          <a
+            href="#home"
+            class="text-white p-2 transition-all duration-500 hover:ps-4"
+            >Home</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-white p-2 transition-all duration-500 hover:ps-4"
+            >Portofolio</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-white p-2 transition-all duration-500 hover:ps-4"
+            >Desain</a
+          >
+        </li>
+        <li>
+          <a
+            href=""
+            class="text-white p-2 transition-all duration-500 hover:ps-4"
+            >Testimoni</a
+          >
+        </li>
       </div>
     </header>
-    <main>
-      
+    <main class="flex justify-center items-center flex-col w-full">
+      <section id="hero" class="w-full max-w-[1200px] flex justify-between items-center">
+        <div class="w-1/2 p-8 text-left">
+          <h1 class="text-[80px] font-bold bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue">Wenusa </h1>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam molestias, ad harum sunt aut quaerat voluptas possimus doloremque necessitatibus, quae modi eveniet recusandae temporibus velit quis tempore! Ab, eligendi!</p>
+        </div>
+        <div class="w-1/2 mask-radial">
+          <img src="./img/hero-img.png" class="w-full" alt="">
+        </div>
+      </section>
+      <section class="w-full max-w-[1200px] flex justify-between items-center">
+
+      </section>
+      <section id="portfolio">
+
+      </section>
     </main>
-    <footer></footer>
+    <footer>
+      <!-- <div class="card">
+        <div
+          class="relative bg-black w-[300px] sm:w-[350px] group transition-all duration-700 aspect-video flex items-center justify-center"
+        >
+          <div
+            class="transition-all flex flex-col items-center py-5 justify-start duration-300 group-hover:duration-1000 bg-white w-full h-full absolute group-hover:-translate-y-16"
+          >
+            <p
+              class="text-xl sm:text-2xl font-semibold text-gray-500 font-serif"
+            >
+              Thank You
+            </p>
+            <p class="px-10 text-[10px] sm:text-[12px] text-gray-700">
+              It’s so nice that you had the time to view this idea
+            </p>
+            <p class="font-serif text-[10px] sm:text-[12px text-gray-700">
+              Wishing you a fantastic day ahead!
+            </p>
+            <p class="font-sans text-[10px] text-gray-700 pt-5">SMOOKYDEV</p>
+          </div>
+          <button
+            class="seal bg-rose-500 text-red-800 w-10 aspect-square rounded-full z-40 text-[10px] flex items-center justify-center font-semibold [clip-path:polygon(50%_0%,_80%_10%,_100%_35%,_100%_70%,_80%_90%,_50%_100%,_20%_90%,_0%_70%,_0%_35%,_20%_10%)] group-hover:opacity-0 transition-all duration-1000 group-hover:scale-0 group-hover:rotate-180 border-4 border-rose-900"
+          >
+            Wenusa
+          </button>
+          <div
+            class="tp transition-all duration-1000 group-hover:duration-100 bg-neutral-800 absolute group-hover:[clip-path:polygon(50%_0%,_100%_0,_0_0)] w-full h-full [clip-path:polygon(50%_50%,_100%_0,_0_0)]"
+          ></div>
+          <div
+            class="lft transition-all duration-700 absolute w-full h-full bg-neutral-900 [clip-path:polygon(50%_50%,_0_0,_0_100%)]"
+          ></div>
+          <div
+            class="rgt transition-all duration-700 absolute w-full h-full bg-neutral-800 [clip-path:polygon(50%_50%,_100%_0,_100%_100%)]"
+          ></div>
+          <div
+            class="btm transition-all duration-700 absolute w-full h-full bg-neutral-900 [clip-path:polygon(50%_50%,_100%_100%,_0_100%)]"
+          ></div>
+        </div>
+      </div> -->
+    </footer>
     <script src="./js/main.js"></script>
   </body>
 </html>
