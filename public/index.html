@@ -13,6 +13,8 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       .menu {
         --s: 30px; /* control the size */
@@ -89,8 +91,8 @@
           href="#"
           class="flex items-center w-full justify-start :sm:justify-center sm:w-[20%]"
         >
-          <img src="./img/logo.png" alt="" class="w-20" />
-          <h2 class="font-black text-[30px] dark:text-slate-100 drop-shadow-xl">Wenusa</h2>
+          <img src="./img/logo.png" alt="" class="sm:w-20 w-16" />
+          <h2 class="font-black sm:text-[30px] text-[24px] dark:text-slate-100 drop-shadow-xl">Wenusa</h2>
         </a>
         <nav class="w-[60%] items-center sm:flex hidden justify-center">
           <ul class="flex font-medium text-lg gap-6">
@@ -124,12 +126,12 @@
             </li>
           </ul>
         </nav>
-        <div class="w-[20%] justify-end sm:flex hidden font-bold">
+        <div class="w-[20%] justify-end sm:flex gap-5 hidden font-bold">
           <button class="darkmode">
-            tes
+            <i class="fa-solid fa-moon w-10 h-10 rounded-full border-4 bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue border-csGreen p-2 "></i>
           </button>
           <button
-            class="text-csGreen border-csGreen border-2 shadow-lg shadow-slate-400 transition-all duration-300 hover:bg-gradient-to-tr hover:from-csGreen hover:to-csBlue px-6 py-[6px] rounded-xl hover:text-white"
+            class="text-csGreen border-csGreen border-2 shadow-sm shadow-slate-400 transition-all duration-300 hover:bg-gradient-to-tr hover:from-csGreen hover:to-csBlue px-6 py-[6px] rounded-xl hover:text-white"
           >
             Login
           </button>
@@ -142,7 +144,7 @@
         />
       </div>
       <div
-        class="dropdown w-[400px] h-0 absolute overflow-hidden top-[100px] right-8 bg-slate-500 list-none p-0 sm:hidden flex flex-col gap-3 transition-all duration-300 bg-gradient-to-tr from-csGreenOp to-csBlueOp backdrop-blur-md bg-opacity-25 rounded-xl"
+        class="dropdown sm:w-[400px] w-[300px] h-0 z-10 absolute overflow-hidden top-[100px] right-2 bg-slate-500 list-none p-0 sm:hidden flex flex-col gap-3 transition-all duration-300 bg-gradient-to-tr from-csGreenOp to-csBlueOp backdrop-blur-sm bg-opacity-25 rounded-xl"
       >
         <li>
           <a
@@ -174,22 +176,62 @@
         </li>
       </div>
     </header>
-    <main class="flex justify-center items-center flex-col w-full">
-      <section id="hero" class="w-full max-w-[1200px] flex justify-between items-center">
-        <div class="w-1/2 p-8 text-left">
-          <h1 class="text-[80px] font-bold bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue">Wenusa </h1>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam molestias, ad harum sunt aut quaerat voluptas possimus doloremque necessitatibus, quae modi eveniet recusandae temporibus velit quis tempore! Ab, eligendi!</p>
+    <main class="flex justify-center items-center flex-col w-full overflow-x-hidden">
+      <!-- S: Hero -->
+      <section id="hero" class="w-full max-w-[1200px] flex flex-col-reverse sm:flex-row justify-between items-center">
+        <div class="sm:w-1/2 p-8 -translate-y-44 sm:translate-y-0 text-left w-full">
+          <h1 class="sm:text-[80px] text-[60px] font-bold bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue">Wenusa </h1>
+          <p class="sm:text-[16px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam molestias, ad harum sunt aut quaerat voluptas possimus doloremque necessitatibus, quae modi eveniet recusandae temporibus velit quis tempore! Ab, eligendi!</p>
+          <button class="text-white bg-gradient-to-tr from-csYellow to-csGreenYellow px-4 py-2 rounded-lg shadow-md mt-4">Buat Sekarang<i class="hover:ps-5 ps-2 transition-all duration-500 fa-solid fa-arrow-right"></i></button>
         </div>
-        <div class="w-1/2 mask-radial">
+        <div class="sm:w-1/2 w-full  mask-radial">
           <img src="./img/hero-img.png" class="w-full" alt="">
         </div>
       </section>
-      <section class="w-full max-w-[1200px] flex justify-between items-center">
-
+      <!-- E: Hero -->
+      <!-- S: Three Card -->
+      <section class="w-full  max-w-[1200px] gap-9 flex justify-center sm:mt-28 -mt-9 mb-36 flex-wrap items-center">
+        <div class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
+          <h1 class="font-bold text-lg">Title</h1>
+          <div class="flex items-center gap-5 mt-2">
+            <i class="fa-solid fa-heart text-[40px] bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue"></i>
+            <p>Find more about your wedding
+              <br>
+              lorem ipsum dolor
+            </p>
+          </div>
+        </div>
+        
+        <div class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
+          <h1 class="font-bold text-lg">Title</h1>
+          <div class="flex items-center gap-5 mt-2">
+            <i class="fa-solid fa-heart text-[40px] bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue"></i>
+            <p>Find more about your wedding
+              <br>
+              lorem ipsum dolor
+            </p>
+          </div>
+        </div>
+        <div class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
+          <h1 class="font-bold text-lg">Title</h1>
+          <div class="flex items-center gap-5 mt-2">
+            <i class="fa-solid fa-heart text-[40px] bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue"></i>
+            <p>Find more about your wedding
+              <br>
+              lorem ipsum dolor
+            </p>
+          </div>
+        </div>
       </section>
-      <section id="portfolio">
+      <!-- E: Three Card -->
+      <!-- S: Portfolio -->
+      <section id="portfolio w-full  max-w-[1200px] gap-9 flex flex-col  justify-center  mb-36  items-center">
+        <h1 class="text-[30px] font-bold tracking-wider">Portfolio</h1>
+        <div class="w-full flex ">
 
+        </div>
       </section>
+      <!-- E: Portfolio -->
     </main>
     <footer>
       <!-- <div class="card">

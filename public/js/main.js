@@ -9,6 +9,12 @@ document.querySelector('.menu').addEventListener('click',()=>{
     }
 })
 
-document.querySelector('.darkmode').addEventListener('click',()=>{
+document.querySelector('.darkmode').addEventListener('click',function(){
     document.documentElement.classList.toggle('dark')
+    
+    if(document.documentElement.classList.contains('dark')){
+        this.children[0].classList.replace('fa-moon','fa-sun');
+    }else{
+        this.children[0].classList.replace('fa-sun','fa-moon');
+    }
 })
