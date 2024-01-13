@@ -8,13 +8,13 @@ document.querySelector('.menu').addEventListener('click',()=>{
         dropdown.classList.replace('p-0','p-4');
     }
 })
-
-document.querySelector('.darkmode').addEventListener('click',function(){
-    document.documentElement.classList.toggle('dark')
-    
-    if(document.documentElement.classList.contains('dark')){
-        this.children[0].classList.replace('fa-moon','fa-sun');
-    }else{
-        this.children[0].classList.replace('fa-sun','fa-moon');
-    }
+document.querySelectorAll('.darkmode').forEach(el =>{
+    el.addEventListener('click',function(){
+        document.documentElement.classList.toggle('dark')
+        if(document.documentElement.classList.contains('dark')){
+            this.children[0].classList.replace('fa-moon','fa-sun');
+        }else{
+            this.children[0].classList.replace('fa-sun','fa-moon');
+        }
+})
 })
