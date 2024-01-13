@@ -15,7 +15,9 @@
     />
     <!-- Fontawesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+   <style>
       .menu {
         --s: 30px; /* control the size */
         --c: #38e54d; /* the color */
@@ -180,7 +182,10 @@
     <main class="flex justify-center items-center flex-col w-full overflow-x-hidden">
       <!-- S: Hero -->
       <section id="hero" class="w-full max-w-[1200px] flex flex-col-reverse sm:flex-row justify-between items-center">
-        <div class="sm:w-1/2 p-8 -translate-y-44 sm:translate-y-0 text-left w-full">
+        <div data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000" class="sm:w-1/2 p-8  -translate-y-44 sm:translate-y-0 text-left w-full">
           <h1 class="sm:text-[80px] text-[60px] font-bold bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue">Wenusa </h1>
           <p class="sm:text-[16px] text-[14px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis ipsam molestias, ad harum sunt aut quaerat voluptas possimus doloremque necessitatibus, quae modi eveniet recusandae temporibus velit quis tempore! Ab, eligendi!</p>
           <button class="text-white bg-gradient-to-tr from-csYellow to-csGreenYellow px-4 py-2 rounded-lg shadow-md mt-4">Buat Sekarang<i class="hover:ps-5 ps-2 transition-all duration-500 fa-solid fa-arrow-right"></i></button>
@@ -192,7 +197,10 @@
       <!-- E: Hero -->
       <!-- S: Three Card -->
       <section class="w-full  max-w-[1200px] gap-9 flex justify-center sm:mt-28 -mt-9 mb-36 flex-wrap items-center">
-        <div class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
+        <div data-aos="fade-right"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000" class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
           <h1 class="font-bold text-lg">Title</h1>
           <div class="flex items-center gap-5 mt-2">
             <i class="fa-solid fa-heart text-[40px] bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue"></i>
@@ -203,7 +211,10 @@
           </div>
         </div>
         
-        <div class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
+        <div data-aos="fade-down"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000" class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
           <h1 class="font-bold text-lg">Title</h1>
           <div class="flex items-center gap-5 mt-2">
             <i class="fa-solid fa-heart text-[40px] bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue"></i>
@@ -213,7 +224,10 @@
             </p>
           </div>
         </div>
-        <div class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
+        <div data-aos="fade-left"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000" class="w-[350px] dark:bg-slate-700 shadow-[5px_5px_rgba(0,_98,_90,_0.4),_10px_10px_rgba(0,_98,_90,_0.3),_15px_15px_rgba(0,_98,_90,_0.2),_20px_20px_rgba(0,_98,_90,_0.1),_25px_25px_rgba(0,_98,_90,_0.05)] flex justify-center items-center flex-col bg-slate-200 p-4 transition-all duration-500 rounded-xl hover:-translate-y-4">
           <h1 class="font-bold text-lg">Title</h1>
           <div class="flex items-center gap-5 mt-2">
             <i class="fa-solid fa-heart text-[40px] bg-clip-text text-transparent bg-gradient-to-br from-csGreen to-csBlue"></i>
@@ -228,7 +242,10 @@
       <!-- S: portofolio -->
       <section id="portofolio" class=" w-full  max-w-[1200px] gap-9 flex flex-col  justify-center  mb-36  items-center">
         <h1 class="text-[30px] font-bold tracking-wider">portofolio</h1>
-        <div class="w-full flex flex-wrap gap-6 justify-center">
+        <div data-aos="fade-up"
+        data-aos-offset="200"
+        data-aos-delay="50"
+        data-aos-duration="1000" class="w-full flex flex-wrap gap-6 justify-center">
           <div class="w-[300px] flex flex-col shadow-xl p-4 border-[1px] border-slate-300 transition-all duration-300 rounded-xl hover:shadow-[5px_5px_15px_#00000040]">
             <img src="./img/vektor-img.jpg" alt="" class="w-full rounded-xl">
             <h1 class="text-xl ps-3 mt-3 font-medium">Title</h1>
@@ -304,6 +321,11 @@
         </div>
       </div>
     </footer>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="./js/main.js"></script>
   </body>
 </html>
